@@ -1,15 +1,15 @@
 package com.app;
 
+
+import javafx.application.Application;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MainApplication {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         SpringApplication.run(MainApplication.class, args);
-        PredictionService service = new PredictionService();
-        ControllerSimulator simulator = new ControllerSimulator(service);
-        simulator.runSimulation();  // Run control loop
-        // Launch JavaFX Dashboard in separate thread if needed
+        // Launch JavaFX Dashboard
+        Application.launch(Dashboard.class, args);
     }
 }
