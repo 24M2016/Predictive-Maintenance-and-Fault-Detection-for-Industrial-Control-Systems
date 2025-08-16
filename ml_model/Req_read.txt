@@ -1,0 +1,7 @@
+numpy: For numerical operations and array handling.
+pandas: For data manipulation and loading CSV datasets (e.g., NASA CMAPSS).
+scikit-learn: For Random Forest (RUL prediction) and Isolation Forest (anomaly detection).
+tensorflow: For LSTM model (time-series forecasting).
+flask: To serve the ML model predictions via a REST API.
+matplotlib: Optional, for prototyping visualizations or debugging (e.g., plotting sensor data).
+joblib: For saving/loading scikit-learn models.
