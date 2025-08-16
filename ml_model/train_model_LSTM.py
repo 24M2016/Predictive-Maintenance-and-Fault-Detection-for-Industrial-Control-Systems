@@ -1,6 +1,5 @@
 
 import numpy as np
-
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense

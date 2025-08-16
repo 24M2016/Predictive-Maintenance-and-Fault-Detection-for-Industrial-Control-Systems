@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ml_api:
+    build: ./ml_model
+    ports:
+      - "5000:5000"
+  java_app:
+    build: ./java_app
+    depends_on:
+      - ml_api
+    ports:
+      - "8080:8080"
